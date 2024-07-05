@@ -1,0 +1,1 @@
+scoreboard players add clear clock 1 
