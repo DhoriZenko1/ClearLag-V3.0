@@ -1,0 +1,22 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "Karmas ClearLag",
+        "description": "ClearLag :3 ",
+        "uuid": "be1a264f-9cc1-425f-abcf-a642ddaef97f",
+        "version": [1, 0, 1],
+        "min_engine_version": [1, 20, 0]
+    },
+    "metadata": {
+        "authors": ["Karma"],
+        "license": "AGPLv3",
+        "url": "https://github.com/dhorizenko1"
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "1adab2e3-1ea3-4dcb-bd71-de40fd74d998",
+            "version": [1, 0, 0]
+        }
+    ]
+}
