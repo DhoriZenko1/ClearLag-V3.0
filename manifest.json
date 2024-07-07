@@ -1,39 +1,22 @@
 {
-  "format_version": 2,
-  "header": {
-    "name": "Lag Clear 3.3",
-    "description": "By ZorroCraft",
-    "uuid": "5253794c-0ac0-7e37-cc30-89641b9db2fb",
-    "version": [
-      1,
-      0,
-      0
-    ],
-    "min_engine_version": [
-      1,
-      17,
-      0
+    "format_version": 2,
+    "header": {
+        "name": "Karmas ClearLag3.0",
+        "description": "ClearLag3.0 is a automatic version of clearlag2.0",
+        "uuid": "c92edd0a-934b-4728-bf7c-9ff8f90f833e",
+        "version": [1, 0, 3],
+        "min_engine_version": [1, 20, 0]
+    },
+    "metadata": {
+        "authors": ["Karma"],
+        "license": "AGPLv3",
+        "url": "https://github.com/dhorizenko1"
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "ba17fa3e-2485-4016-88f5-6b8513b98d88",
+            "version": [1, 0, 0]
+        }
     ]
-  },
-  "modules": [
-    {
-      "type": "data",
-      "uuid": "55af03c6-23ac-ff62-985c-9b78494b0104",
-      "version": [
-        1,
-        0,
-        0
-      ]
-    }
-  ],
-  "dependencies": [
-    {
-      "uuid": "6d6c7d69-11ff-ff42-4b7b-3d70e9efe5dd",
-      "version": [
-        1,
-        0,
-        0
-      ]
-    }
-  ]
 }
