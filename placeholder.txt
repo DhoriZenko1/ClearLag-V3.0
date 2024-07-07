@@ -1,0 +1,162 @@
+pasives
+ kill @e[type=bat] 
+ kill @e[type=cod]  
+ kill @e[type=dolphin] 
+ kill @e[type=glow_squid]
+ kill @e[type=goat]
+ kill @e[type=mooshroom]
+ kill @e[type=ocelot]
+ kill @e[type=polar_bear]
+ kill @e[type=pufferfish]
+ kill @e[type=rabbit]
+ kill @e[type=salmon]
+ kill @e[type=squid] 
+ kill @e[type=tropicalfish]
+ kill @e[type=turtle]
+hostile
+ kill @e[type=arrow]
+ kill @e[type=blaze]
+ kill @e[type=cave_spider]
+ kill @e[type=creeper]
+ kill @e[type=drowned]
+ kill @e[type=elder_guardian]
+ kill @e[type=elder_guardian_ghost]
+ kill @e[type=enderman,r=100]
+ kill @e[type=endermite]
+ kill @e[type=evocation_fang]
+ kill @e[type=evocation_illager]
+ kill @e[type=ghast]
+ kill @e[type=guardian]
+ kill @e[type=hoglin]
+ kill @e[type=husk] 
+ kill @e[type=leash_knot]
+ kill @e[type=magma_cube] 
+ kill @e[type=magma_cube]
+ kill @e[type=phantom]
+ kill @e[type=piglin]
+ kill @e[type=piglin_brute]
+ kill @e[type=pillager]
+ kill @e[type=ravager]
+ kill @e[type=shulker]
+ kill @e[type=silverfish]
+ kill @e[type=skeleton]
+ kill @e[type=skeleton_horse]
+ kill @e[type=slime]
+ kill @e[type=spider]
+ kill @e[type=stray]
+ kill @e[type=strider]
+ kill @e[type=vex]
+ kill @e[type=vindicator] 
+ kill @e[type=witch] 
+ kill @e[type=wither_skeleton] 
+ kill @e[type=zoglin]
+ kill @e[type=zombie] 
+ kill @e[type=zombie_horse] 
+ kill @e[type=zombie_pigman] 
+ kill @e[type=zombie_villager]
+timers
+ 10min=12000_tick
+ cd1sec=11980_tick
+ cd2sec=11960_tick
+ cd3sec=11940_tick
+ cd4sec=11920_tick
+ cd5sec=11900_tick
+ cd6sec=11880_tick
+ cd7sec=11860_tick
+ cd8sec=11840_tick
+ cd9sec=11820_tick
+ cd10sec=11800_tick
+ 9.30min=11400
+ 9min=10800_tick 
+ 5min=6000_tick
+ 4.5_min=5400_tick
+ 4_min=4800_tick
+ 3_min=3600_tick
+ 2_min=2400_tick
+ 1_min=1200_tick
+ 30sec=600_tick
+ 1sec=20_tick
+specail collor
+ §0	Changes text to Black
+ §1	Changes text to Dark Blue
+ §2	Changes text to Dark Green
+ §3	Changes text to Dark Aqua
+ §4	Changes text to Dark Red
+ §5	Changes text to Dark Purple
+ §6	Changes text to Gold
+ §7	Changes text to Gray
+ §8	Changes text to Dark Gray
+ §9	Changes text to Blue
+ §a	Changes text to Green
+ §b	Changes text to Aqua
+ §c	Changes text to Red
+ §d	Changes text to Light Purple
+ §e	Changes text to Yellow
+ §f	Changes text to White
+ §g	Changes text to Minecoin Gold
+rule:
+ execute if score clear clock += 5min
+ execute if score clear clock += 30_sec
+ execute if score clear clock += 4min 
+ execute if score clear clock += 3min
+ execute if score clear clock += 10_sec
+ execute if score clear clock += 9_sec
+ execute if score clear clock += 8_sec
+ execute if score clear clock += 7_sec
+ execute if score clear clock += 6_sec
+ execute if score clear clock += 5_sec
+ execute if score clear clock += 4_sec
+ execute if score clear clock += 3_sec
+ execute if score clear clock += 2_sec
+ execute if score clear clock += 1_sec
+rules=clock
+ scoreboard players add clear clock 1
+ execute @e[name=clear, scores={clock=3600}] run tellraw @a {"rawtext":[{"text":"§2ClearingLag in 2 Minutes"}]}
+ execute @e[name=clear, scores={clock=4800}] run tellraw @a {"rawtext":[{"text":"§2ClearingLag in 1 Minute"}]}
+ execute @e[name=clear, scores={clock=5400}] run tellraw @a {"rawtext":[{"text":"§2ClearingLag in 30 seconds"}]}
+ execute @e[name=clear, scores={clock=5800}] run tellraw @a {"rawtext":[{"text":"§2ClearingLag in 10 seconds"}]}
+ execute @e[name=clear, scores={clock=5820}] run tellraw @a {"rawtext":[{"text":"§2ClearingLag in 9 seconds"}]}
+ execute @e[name=clear, scores={clock=5840}] run tellraw @a {"rawtext":[{"text":"§2ClearingLag in 8 seconds"}]}
+ execute @e[name=clear, scores={clock=5860}] run tellraw @a {"rawtext":[{"text":"§2ClearingLag in 7 seconds"}]}
+ execute @e[name=clear, scores={clock=5880}] run tellraw @a {"rawtext":[{"text":"§2ClearingLag in 6 seconds"}]}
+ execute @e[name=clear, scores={clock=5900}] run tellraw @a {"rawtext":[{"text":"§2ClearingLag in 5 seconds"}]}
+ execute @e[name=clear, scores={clock=5920}] run tellraw @a {"rawtext":[{"text":"§2ClearingLag in 4 seconds"}]}
+ execute @e[name=clear, scores={clock=5940}] run tellraw @a {"rawtext":[{"text":"§2ClearingLag in 3 seconds"}]}
+ execute @e[name=clear, scores={clock=5960}] run tellraw @a {"rawtext":[{"text":"§2ClearingLag in 2 seconds"}]}
+ execute @e[name=clear, scores={clock=5980}] run tellraw @a {"rawtext":[{"text":"§2ClearingLag in 1 second"}]}
+ execute @e[name=clear, scores=[clock=6000]] run playsound note.creeper @a
+ execute @e[name=clear, scores={clock=6000}] run tellraw @a {"rawtext":[{"text":"§4ClearingLag! ITEMS AND EXTRA MOBS KILLED"}]}
+ execute @e[name=clear, scores={clock=6000}] run function function2/pclear
+ execute @e[name=clear, scores={clock=6000}] run function function2/hclear
+ execute @e[name=clear, scores={clock=6000}] run function function2/item_clear
+ scoreboard players reset clear clock
+rules=
+ scoreboard players add 5min clock 6000
+ scoreboard players add 30_sec clock 5400
+ scoreboard players add 4min clock 4800
+ scoreboard players add 3min clock 3600
+ scoreboard players add 10_sec clock 5800
+ scoreboard players add 9_sec clock 5820
+ scoreboard players add 8_sec clock 5840
+ scoreboard players add 7_sec clock 5860
+ scoreboard players add 6_sec clock 5880
+ scoreboard players add 5_sec clock 5900
+ scoreboard players add 4_sec clock 5920
+ scoreboard players add 3_sec clock 5940
+ scoreboard players add 2_sec clock 5960
+ scoreboard players add 1_sec clock 5980
+ 
+ scoreboard players reset 5min  clock
+ scoreboard players reset 30_sec clock
+ scoreboard players reset 4min clock
+ scoreboard players reset 3min clock
+ scoreboard players reset 10_sec clock
+ scoreboard players reset 9_sec clock
+ scoreboard players reset 8_sec clock
+ scoreboard players reset 7_sec clock
+ scoreboard players reset 6_sec clock
+ scoreboard players reset 5_sec clock
+ scoreboard players reset 4_sec clock
+ scoreboard players reset 3_sec clock
+ scoreboard players reset 2_sec clock
+ scoreboard players reset 1_sec clock
