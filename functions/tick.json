@@ -1,0 +1,15 @@
+{
+    "values": [
+        "clock/tick",
+        "times/10min",
+        "times/5min",
+        "times/1min",
+        "times/30sec",
+        "times/10sec",
+        "times/5sec",
+        "times/4sec",
+        "times/3sec",
+        "times/2sec",
+        "times/1sec"
+    ]
+}

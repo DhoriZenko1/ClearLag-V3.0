@@ -1,0 +1,1 @@
+tellraw @a {"rawtext":[{"text":"§2ClearLag3.0 §5Made by DhoriZenko contact me on discord @karmasflame or go to www.dhorizenko.xyz §bThank you @wiitherdragon (Arch) for supporting me at DhoriZenko!"}]}
